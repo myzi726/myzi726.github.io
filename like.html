@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		body{
+			font-size: 12pt;
+			font-weight: bold;
+			font-family: fantasy;
+			margin-top: 5px;
+			margin-left: 200px;
+		}
+		.div1{
+			margin-bottom: 10px;
+		}
+		@keyframes start{
+			0%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+		div{
+			animation-name: start;
+			animation-duration: 1s;
+			margin-left: 100px;
+		}
+		img{
+			border-radius: 100px;
+			border: solid 5px lavender;
+		}
+		@keyframes image{
+		from{
+			width: 200px;
+			height: 200px;	
+			}
+		to{
+			width: 210px;
+			height: 210px;
+			box-shadow: 5px 5px 7px gray;
+			}
+		}
+		img:hover{
+			animation-name:image;
+			animation-duration: 1.5s;
+			animation-delay: 0s;
+		}
+		span{
+			border-top: dotted 5px gray;
+		}
+		@keyframes span{
+			from{
+			}
+			to{
+				font-size: 15pt;
+				border-top: 0px;
+			}
+		}
+		.cat:hover{
+			background-color: #AC99C1;
+			color: white;
+			border-radius: 5px;
+			animation-name: span;
+			animation-duration: 2s;
+		}
+		.dog:hover{
+			background-color: #AC99C1;
+			color: white;
+			border-radius: 5px;
+			animation-name: span;
+			animation-duration: 2s;
+		}
+		.trip:hover{
+			background-color: #AC99C1;
+			color: white;
+			border-radius: 5px;
+			animation-name: span;
+			animation-duration: 2s;
+		}
+	</style>
+</head>
+<body>
+<div class="div1">
+<img src="img/고양이.jpg" width="200px" height="200px">&emsp;
+<img src="img/강아지.jpg" width="200px" height="200px"><br><br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;저는&nbsp;&nbsp;<span class="cat">고양이</span>&nbsp;&nbsp;와&nbsp;&nbsp;<span class="dog">강아지</span>&nbsp;를 좋아해요
+</div><br>
+
+<div class="div2">
+<img src="img/여행.jpg" width="200px" height="200px">&emsp;
+<img src="img/여행2.jpg" width="200px" height="200px"><br><br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;그리고&nbsp;&nbsp;<span class="trip">여행</span>&nbsp;&nbsp;가는 것을 좋아합니다
+</div>
+</body>
+</html>

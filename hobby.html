@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		body{
+			font-family: fantasy;
+			font-size: 50pt;
+		}
+		.clear{
+			clear: both;
+		}
+		.movieimg{
+			margin-left: 150px;
+			margin-right: 150px;
+			margin-bottom: 100px;
+			float: left;
+		}
+		.movietext{
+			float: left;
+			margin-left: 120px;
+			margin-top: 30px;
+			animation-name: text;
+			animation-duration: 5s
+		}
+		.movietext:hover .M{
+			font-size: 55pt;
+			color: red;
+		}
+		@keyframes img{
+			from{
+				left: 0px;
+			}
+			to{
+				left: 100px;
+			}
+		}
+		.movieimg:hover{
+			position: relative;
+			animation-name: img;
+			animation-duration: 3.5s;
+			animation-timing-function: linear;
+			}
+		@keyframes text{
+			0%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+		.singimg{
+			margin-left: 150px;
+			margin-right: 150px;
+			float: left;
+		}
+		.singtext{
+			float: left;
+			margin-left: 150px;
+			margin-top: 30px;
+			animation-name: text;
+			animation-duration: 5s
+		}
+		.singimg:hover{
+			position: relative;
+			animation-name: img;
+			animation-duration: 3.5s;
+			animation-timing-function: linear;
+		}
+		.singtext:hover .S{
+			font-size: 55pt;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+<div class="movieimg">
+<img src="img/popcorn.png" width="150px">
+</div>
+<div class="movietext">
+<span class="M">M</span> O V I E
+</div>
+
+<div class="clear"></div>
+
+<div class="singimg">
+<img src="img/sing.png" width="150px">
+</div>
+<div class="singtext">
+<span class="S">S</span> I N G
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0px;
+	}
+		img{
+			margin-left: 20px;
+			border-radius: 15px;
+			animation-name: start;
+			animation-duration: 1s;
+		}
+		.img1{
+			margin-left: 80px;
+		}
+		p{
+			font-family: fantasy;
+			font-weight: lighter;
+			color: white;
+			text-shadow: -1px 0 black, -1px 0 black, 0 1px black, 0 1px black, 1px 0 black, 0 -1px black;
+		}
+		@keyframes start{
+			0%{opacity: 0;}
+			100%{opacity: 1;}
+		}
+		@keyframes image{
+			from{
+			width: 250px;
+			height: 250px;	
+			}
+			to{
+			width: 280px;
+			height: 280px;
+			box-shadow: 5px 5px 5px gray;
+			border-radius: 30px;
+			}
+		}
+		img:hover{
+			animation-name:image;
+			animation-duration: 3s;
+			animation-delay: 0;
+		}
+		.img1{float: left;}
+		.img2{float: left;}
+		.img3{float: left;}
+		.birth,.mbti,.now{opacity: 0;}
+
+		.img1:hover .birth{opacity: 1;}
+		.img2:hover .mbti{opacity: 1;}
+		.img3:hover .now{opacity: 1;}
+		.click{
+			clear: both;
+		}
+		.birth{
+			margin-left: 50px;
+		}
+		.mbti{
+			margin-left: 50px;
+		}
+		.now{
+			margin-left: 50px;
+		}
+
+	</style>
+</head>
+
+<body>
+<div>
+	<div class="img1">
+	<img src="img/1.jpg" width="250px" height="250px"><br><br>
+	<p class="birth"><font size="4">&nbsp;&nbsp;Birthday : July 26th, 1999</font></p>
+	</div>
+
+	<div class="img2">
+	<img src="img/2.jpg" width="250px" height="250px"><br><br>
+	<p class="mbti"><font size="4">&emsp;&emsp;&nbsp; MBTI -> ESFP</font></p>
+	</div>
+
+	<div class="img3">
+	<img src="img/3.jpg" width="250px" height="250px"><br><br>
+	<p class="now"><font size="3">DONGYANG MIRAE UNIVERSITY<br>Computer Engineering 20211017</font></p>
+	</div>
+</div>
+<div class="click"></div>
+</body>
+</html>
